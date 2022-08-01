@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Text, TextInput, Grid } from 'grommet';
+import { Box, Text, TextInput } from 'grommet';
 import { Note, Add } from 'grommet-icons';
 import './Content.css'
 

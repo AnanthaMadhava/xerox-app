@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Header as GrommetHeader, Text, Button, Box, Layer } from 'grommet';
+import { Header as GrommetHeader, Text, Layer } from 'grommet';
+import Button from './Button';
 import { Scan, Close } from 'grommet-icons';
 import './Header.css';
 
@@ -20,23 +21,23 @@ const Header = () => {
         <Text className='app-xerox-header-text'>
           Xerox&reg; Note Converter
         </Text>
-        <Button className='app-xerox-header-button' onClick={onOpen}>
-          <Box pad="small" direction="row" align="center" gap="small">
-            <Scan color='#fff'/>
-            <Text>Scan</Text>
-          </Box>
-        </Button>
+        <Button 
+          className='app-xerox-header-button'
+          icon={<Scan color='#fff'/>}
+          label='Scan'
+          onClick={onOpen}
+        />
       </GrommetHeader>
       {open && (
         <Layer className='app-xerox-header-scanLayer'>
           <Text size='large'>Document Successfully Scanned.</Text>
           <Text className='app-xerox-header-scanLayer-successEmail' size='medium'>You will receive an email from Xerox Note Converter with your text file.</Text>
-          <Button className='app-xerox-header-layer-button' onClick={onClose}>
-            <Box pad="small" direction="row" align="center" gap="small">
-              <Close color='#fff'/>
-              <Text>Close</Text>
-            </Box>
-          </Button>
+          <Button 
+            className='app-xerox-header-layer-button'
+            icon={<Close color='#fff'/>}
+            label='Close'
+            onClick={onClose}
+          />
         </Layer>
       )}
     </>

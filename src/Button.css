@@ -1,0 +1,10 @@
+.app-xerox-button {
+  border: 1px solid rgba(0,0,0,0.33) !important;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.app-xerox-label {
+  display: flex;
+  justify-content: center;
+}

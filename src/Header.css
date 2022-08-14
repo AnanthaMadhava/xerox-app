@@ -11,10 +11,7 @@
   font-size: 22px !important;
 }
 .app-xerox-header-button {
-  border: 1px solid rgba(0,0,0,0.33) !important;
   float: right;
-  border-radius: 5px;
-  font-weight: 500;
 }
 
 .app-xerox-header-scanLayer {

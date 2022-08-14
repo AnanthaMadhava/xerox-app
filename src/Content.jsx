@@ -1,17 +1,19 @@
 import React from 'react';
-import { Box, Text, TextInput } from 'grommet';
+import { Box, Text } from 'grommet';
 import { Note, Add } from 'grommet-icons';
 import './Content.css'
+import Button from './Button';
+import InputField from './InputField';
 
 const Content = () => {
   return (
     <>
       <Box className='app-xerox-content-top'>
         <Text className='app-xerox-content-count'>Maximun page per job: 10</Text>
-        <TextInput
-          placeholder="Enter email to receive text file"
+        <InputField 
+          placeholder='Enter email to receive text file'
         />
-        <TextInput
+        <InputField
           placeholder="Confirmation Email"
         />
         <div className='app-xerox-content-grid'>
@@ -41,12 +43,20 @@ const Content = () => {
           </div>
         </Box>
         <div className='app-xerox-content-grid'>
-          <Box className='app-xerox-content-statement'>
+          <Button 
+            className='app-xerox-content-statement'
+            label='Reset'
+          />
+          <Button 
+            className='app-xerox-content-statement'
+            label='Privacy Statement'
+          />
+          {/* <Box className='app-xerox-content-statement'>
             <Text>Reset</Text>
           </Box>
           <Box className='app-xerox-content-statement'>
             <Text>Privacy Statement</Text>
-          </Box>
+          </Box> */}
         </div>
       </Box>
     </>

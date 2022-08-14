@@ -51,12 +51,6 @@ const Content = () => {
             className='app-xerox-content-statement'
             label='Privacy Statement'
           />
-          {/* <Box className='app-xerox-content-statement'>
-            <Text>Reset</Text>
-          </Box>
-          <Box className='app-xerox-content-statement'>
-            <Text>Privacy Statement</Text>
-          </Box> */}
         </div>
       </Box>
     </>

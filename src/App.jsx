@@ -5,10 +5,13 @@ import Header from './Header';
 
 const App = () => {
   return (
-    <Grommet full theme={grommet} themeMode='light'>
-      <Header />
-      <Content />
-    </Grommet>
+    // <Grommet full theme={grommet} themeMode='light'>
+    //   <Header />
+    //   <Content />
+    // </Grommet>
+    <div>
+      <h1>Hello World</h1>
+    </div>
   );
 };
 

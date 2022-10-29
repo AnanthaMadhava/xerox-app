@@ -4,6 +4,12 @@ import "core-js";
 import "core-js/full";
 // polyfill all actual features - stable ES, web standards and stage 3 ES proposals:
 import "core-js/actual";
+import 'core-js/actual/array/from';
+import 'core-js/actual/array/group';
+import 'core-js/actual/set';        
+import 'core-js/actual/promise';    
+import 'core-js/actual/structured-clone';
+import 'core-js/actual/queue-microtask';
 // polyfill only stable features - ES and web standards:
 import "core-js/stable";
 // polyfill only stable ES features:

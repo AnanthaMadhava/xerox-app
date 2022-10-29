@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Search as SearchIcon } from '@mui/icons-material';
+// import { Search as SearchIcon } from '@mui/icons-material';
 import axios from 'axios';
 
 const GitHubUsers = () => {
@@ -55,7 +55,7 @@ const GitHubUsers = () => {
                                 <li>User not found</li>
                             : null}
                         </div>
-                        <div className='searchIcon' onClick={onSubmit}><SearchIcon /></div>
+                        <div className='searchIcon' onClick={onSubmit}>Search</div>
                     </div>
                 </div>
             </div>

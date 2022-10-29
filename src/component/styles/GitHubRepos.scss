@@ -1,0 +1,25 @@
+.userInfomation {
+    padding: 10px 30px;
+    .infoTableContainer {
+        margin: 50px;
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        tbody tr img {
+            width: 30px;
+            height: 30px;
+        }
+        .dataNotFound {
+            text-align: center;
+        }
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    }
+}

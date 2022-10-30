@@ -17,6 +17,7 @@
     "grommet-controls": "^3.0.2",
     "grommet-icons": "^4.7.0",
     "node-scss": "^7.0.3",
+    "promise-polyfill": "^8.2.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.4.2",

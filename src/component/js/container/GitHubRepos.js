@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-// import { CircularProgress } from '@mui/material';
-// import { Box } from '@mui/material';
+import { CircularProgress } from '@mui/material';
+import { Box } from '@mui/material';
 import axios from 'axios';
 
 const GitHubRepos = () => {
@@ -54,10 +54,9 @@ const GitHubRepos = () => {
                         : repos.length === 0 && loading ?
                             <tr>
                                 <th colSpan={6} className="dataNotFound">
-                                    {/* <Box>
+                                    <Box>
                                         <CircularProgress />
-                                    </Box> */}
-                                    Loading...
+                                    </Box>
                                 </th>
                             </tr>
                         :

@@ -18,9 +18,6 @@ import "core-js/es";
 // if you want to polyfill `Set`:
 // all `Set`-related features, with early-stage ES proposals:
 import "core-js/full/set";
-// stable required for `Set` ES features, features from web standards and stage 3 ES proposals:
-import "core-js/actual/set";
-// stable required for `Set` ES features and features from web standards
 // (DOM collections iterator in this case):
 import "core-js/stable/set";
 // only stable ES features required for `Set`:

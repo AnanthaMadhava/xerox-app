@@ -6,23 +6,23 @@ import axios from 'axios';
 
 const App = () => {
 
-  const [ userName, setUserName ] = useState('AnanthaMadhava');
-  const [ usersList, setUsersList ] = useState([]);
+  // const [ userName, setUserName ] = useState('AnanthaMadhava');
+  // const [ usersList, setUsersList ] = useState([]);
 
   useEffect(() => {
-    if(userName) {
-        axios.get(`https://api.github.com/search/users?q=${userName}+in:user`)
+    // if(userName) {
+        axios.get(`https://api.github.com/search/users?q=AnanthaMadhava+in:user`)
         .then(res => {
           let result = res.data.items;
           console.log(result);
-          setUsersList(result);
+          // setUsersList(result);
         })
         .catch(err => {
           console.log(err.response);
-          setUsersList([]);
+          // setUsersList([]);
         })
-    }
-  }, [ userName ]);
+    // }
+  }, [ ]);
 
   return (
     <Grommet full theme={grommet} themeMode='light'>

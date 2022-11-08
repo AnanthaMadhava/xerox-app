@@ -16,7 +16,8 @@ const App = () => {
       .catch(err => {
         setData([]);
       })
-  }, [])
+    console.log(data);
+  }, []);
   return (
     <Grommet full theme={grommet} themeMode='light'>
       <Header />

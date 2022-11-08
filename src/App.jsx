@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Grommet, grommet } from 'grommet';
 import Content from './Content';
 import Header from './Header';
@@ -6,13 +6,15 @@ import axios from 'axios';
 
 const App = () => {
 
+  const [ data, setData ] = useState([]);
+
   useEffect(() => {
     axios.get('https://jsonplaceholder.typicode.com/users')
       .then(res => {
-        console.log(res.data);
+        setData(res.data);
       })
       .catch(err => {
-        console.log(err.response);
+        setData([]);
       })
   }, [])
   return (

@@ -6,7 +6,7 @@ import Header from './Header';
 const App = () => {
 
   useEffect(() => {
-    fetch('https://jsonplaceholder.typicode.com/users')
+    fetch('https://jsonplaceholder.typicode.com/users', { method: 'GET' })
       .then(res => res.json())
       .then(data => {
         console.log(data);

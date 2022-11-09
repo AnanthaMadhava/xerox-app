@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import { Grommet, grommet } from 'grommet';
 import Content from './Content';
 import Header from './Header';
-import fetch from 'node-fetch';
 
 const App = () => {
 

@@ -1,3 +1,6 @@
+import promise from 'es6-promise';
+import 'isomorphic-fetch';
+
 // polyfill all `core-js` features, including early-stage proposals:
 import "core-js";
 // or:
@@ -58,3 +61,5 @@ import 'core-js/modules/es.array.of';
 import 'regenerator-runtime/runtime';
 
 import 'promise-polyfill/src/polyfill';
+
+promise.polyfill();
